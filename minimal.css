@@ -1,7 +1,7 @@
 /* PORTFOLIO — MINIMAL DARK (project-first, grid 3×N) · FR */
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden;width:100%}
+html{scroll-behavior:smooth;overflow-x:hidden;overflow-x:clip;width:100%;max-width:100%;}
 
 :root{
   --bg:#121212;
@@ -29,6 +29,9 @@ body{
   letter-spacing:-0.012em;-webkit-font-smoothing:antialiased;
   font-size:15px;line-height:1.55;
   overflow-x:hidden;
+  overflow-x:clip;
+  max-width:100%;
+  position:relative;
 }
 a{color:inherit;text-decoration:none}
 img,video{display:block;max-width:100%}

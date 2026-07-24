@@ -1,0 +1,198 @@
+/* ============ ABOUT PAGE — MINIMAL DARK (Adam-style hero) ============ */
+
+.about-page main.wrap{ max-width:1240px; }
+
+/* ============ HERO — portrait left + body right ============ */
+.ab-hero{
+  display:grid;
+  grid-template-columns:minmax(280px, 1fr) 1.15fr;
+  gap:72px;
+  padding:120px 0 100px;
+  align-items:flex-start;
+}
+.ab-portrait{ width:100%; max-width:460px; }
+.ab-portrait-img{
+  width:100%;
+  aspect-ratio:831/955;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:18px;
+  display:block;
+  border:1px solid var(--line);
+}
+
+.ab-body{
+  max-width:560px;
+}
+
+/* Big serif H1 like Adam */
+.ab-title{
+  font-family:'Instrument Serif', Georgia, serif;
+  font-weight:400;
+  font-size:clamp(48px, 5.6vw, 76px);
+  line-height:1.02;
+  letter-spacing:-0.015em;
+  color:var(--ink);
+  margin:0 0 36px;
+}
+.ab-title em{
+  font-family:inherit;
+  font-style:italic;
+  font-weight:400;
+  color:var(--ink);
+}
+
+/* Body */
+.ab-copy p{
+  font-family:var(--ff-sans);
+  font-size:17px;
+  line-height:1.55;
+  letter-spacing:-0.005em;
+  color:var(--ink);
+  margin:0 0 22px;
+}
+.ab-copy p:last-child{margin-bottom:0}
+.ab-copy strong{color:var(--ink);font-weight:600}
+
+/* Inline highlighted links (warm sand) */
+.ab-ink{
+  color:#c89a7a;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:color .2s ease, border-color .2s ease;
+}
+.ab-ink:hover{
+  color:#e6b08a;
+  border-bottom-color:rgba(230,176,138,0.5);
+}
+
+/* Signature */
+.ab-sign{
+  margin:36px 0 24px;
+}
+
+/* Social row */
+.ab-socials{
+  display:flex;flex-wrap:wrap;gap:32px;
+  margin-top:8px;
+  font-family:var(--ff-sans);
+  font-size:11.5px;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+}
+.ab-socials a{
+  color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:8px;
+  transition:color .2s ease;
+}
+.ab-socials a:hover{color:var(--ink)}
+.ab-socials .arr{color:var(--ink-3);font-size:13px;letter-spacing:0}
+
+/* ============ BLOCK BASE ============ */
+.ab-block{
+  padding:64px 0;
+  border-top:1px solid var(--line);
+}
+
+.ab-h-label{
+  display:block;
+  font-family:var(--ff-sans);font-weight:600;font-size:15px;letter-spacing:-0.01em;
+  color:var(--ink);
+  margin-bottom:24px;
+}
+.ab-h-label.sub{margin-top:36px}
+
+/* ============ CHIPS / TOOLKIT ============ */
+.ab-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ab-chip{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:8px 14px 8px 10px;border-radius:999px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--line);
+  font-family:var(--ff-sans);font-size:13.5px;font-weight:400;letter-spacing:-0.005em;
+  color:var(--ink);
+  transition:background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.ab-chip:hover{
+  background:rgba(255,255,255,0.07);
+  border-color:var(--line-2);
+  transform:translateY(-1px);
+}
+.ab-chip-i{
+  width:18px;height:18px;flex-shrink:0;
+  object-fit:contain;
+  display:inline-block;
+}
+
+/* ============ EXPERIENCE LIST ============ */
+.ab-exp-list{
+  list-style:none;margin:0;padding:0;
+  border-top:1px solid var(--line);
+}
+.ab-exp-row{
+  display:grid;
+  grid-template-columns:32px minmax(150px, auto) auto 1fr auto auto;
+  align-items:center;column-gap:16px;
+  padding:22px 4px;
+  border-bottom:1px solid var(--line);
+  transition:background .2s ease, padding .25s cubic-bezier(.2,.7,.2,1);
+}
+.ab-exp-row:hover{
+  background:rgba(255,255,255,0.02);
+  padding-left:12px;padding-right:12px;
+}
+.ab-exp-logo{
+  width:28px;height:28px;border-radius:8px;
+  background:rgba(255,255,255,0.05);border:1px solid var(--line);
+  display:grid;place-items:center;
+  font-family:var(--ff-sans);font-size:12px;font-weight:600;letter-spacing:0;
+  color:var(--ink-2);
+}
+.ab-exp-logo::after{content:attr(data-c)}
+.ab-exp-co{
+  font-family:var(--ff-sans);font-weight:500;font-size:15.5px;letter-spacing:-0.01em;
+  color:var(--ink);
+}
+.ab-exp-tag{
+  font-family:var(--ff-sans);font-size:12.5px;font-weight:400;letter-spacing:-0.005em;
+  color:var(--ink-2);
+  padding:5px 11px;border-radius:999px;
+  background:rgba(255,255,255,0.04);border:1px solid var(--line);
+  white-space:nowrap;justify-self:start;
+}
+.ab-exp-role{
+  font-family:var(--ff-sans);font-size:14px;color:var(--ink-2);
+  letter-spacing:-0.005em;text-align:right;
+  white-space:nowrap;
+}
+.ab-exp-dates{
+  font-family:var(--ff-sans);font-size:13px;color:var(--ink-3);
+  letter-spacing:-0.005em;white-space:nowrap;
+  min-width:170px;text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:980px){
+  .ab-hero{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:80px 0 60px;
+  }
+  .ab-portrait{max-width:360px}
+}
+@media (max-width:760px){
+  .ab-exp-row{
+    grid-template-columns:28px 1fr auto;
+    grid-template-areas:
+      "logo co dates"
+      ".    tag tag"
+      ".    role role";
+    row-gap:6px;column-gap:12px;
+  }
+  .ab-exp-logo{grid-area:logo}
+  .ab-exp-co{grid-area:co}
+  .ab-exp-tag{grid-area:tag;justify-self:start}
+  .ab-exp-role{grid-area:role;text-align:left}
+  .ab-exp-dates{grid-area:dates;min-width:0;text-align:right;font-size:12px}
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>(function(){var x=sessionStorage.getItem("pt-x"),y=sessionStorage.getItem("pt-y");document.documentElement.style.background="#0a0907";if(x!==null&&y!==null){var o=document.createElement("div");o.id="pt-pre";o.style.cssText="position:fixed;inset:0;z-index:999999;background:linear-gradient(135deg,#7C3AED 0%,#C026D3 45%,#FB3D5C 100%);";document.documentElement.appendChild(o);}})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAMINGPALS — Case study · Romain Barbier</title>
+<meta name="description" content="GAMINGPALS — plateforme de statistiques et d'outils pour joueurs compétitifs. Case study UX/UI de Romain Barbier.">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="case.css">
+<script src="fx.js" defer></script>
+</head>
+<body class="cs">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="index.html#apropos" class="nav-link">A propos</a>
+    <a href="#contact" class="nav-link">Me contacter</a>
+  </div>
+</nav>
+
+<main data-screen-label="Case study · GAMINGPALS">
+
+  <!-- HERO -->
+  <section class="cs-hero cs-wrap">
+    <div class="cs-device">
+      <div class="cs-device-media cs-device-placeholder"></div>
+      <div class="cs-device-meta"><span>Gaming · Outils joueurs</span><span>2026</span></div>
+    </div>
+    <div class="cs-hero-head">
+      <span class="cs-eyebrow">Gaming · Outils joueurs</span>
+      <h1 class="cs-hero-title">GAMINGPALS</h1>
+      <p class="cs-hero-sub">Une plateforme de statistiques et un outil de composition d'équipes pour joueurs compétitifs — dans l'esprit des références du marché (LeagueOfGraphs, OP.GG), augmentée d'un outil de création de compositions sur mesure.</p>
+      <div class="cs-chips">
+        <span class="cs-chip">UX/UI Design</span>
+        <span class="cs-chip">Data viz</span>
+        <span class="cs-chip">Gaming</span>
+        <span class="cs-chip">Design system</span>
+        <span class="cs-chip">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LE PROJET -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Le projet</h2>
+    <div class="cs-project">
+      <div class="cs-fields">
+        <div>
+          <span class="cs-field-key">Contexte</span>
+          <p class="cs-field-val">GAMINGPALS est une plateforme de statistiques et d'outils pour joueurs compétitifs. J'ai conçu le produit de bout en bout : recherche utilisateurs, parcours, écrans, design system. Beaucoup d'UI dense, de data viz, et d'arbitrage entre puissance et lisibilité.</p>
+        </div>
+        <div>
+          <span class="cs-field-key">Visualiser les statistiques en temps réel</span>
+          <p class="cs-field-val">→ Tableaux de bord personnalisés par champion, rôle et saison</p>
+        </div>
+        <div>
+          <span class="cs-field-key">Construire des compositions d'équipes</span>
+          <p class="cs-field-val">→ Outil de draft interactif avec suggestions basées sur les méta-statistiques</p>
+        </div>
+      </div>
+      <div class="cs-meta">
+        <div class="cs-meta-row"><span class="cs-meta-key">Secteur</span><span class="cs-meta-val">Gaming · Outils joueurs</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Mon rôle</span><span class="cs-meta-val">UX/UI Designer — Produit de bout en bout : recherche, parcours, écrans, design system</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Type de projet</span><span class="cs-meta-val">2026 · Web app</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Stack Design</span><span class="cs-meta-val">Figma, FigJam</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPRENDRE -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Comprendre avant de concevoir</h2>
+    <p class="cs-lede">Les joueurs compétitifs utilisent déjà des outils comme OP.GG ou LeagueOfGraphs — l'enjeu était de comprendre ce qui manquait dans ces références pour apporter une valeur ajoutée réelle sur la partie composition d'équipes.</p>
+    <div class="cs-cards">
+      <div class="cs-card"><span class="cs-card-num">01</span><div><h3 class="cs-card-title">Personae</h3><p class="cs-card-def">Définition des profils : le joueur casual, le grimpeur de rang, le coach amateur et le streamer.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">02</span><div><h3 class="cs-card-title">Benchmark</h3><p class="cs-card-def">Audit des outils existants (OP.GG, U.GG, Porofessor) pour identifier les lacunes et les patterns UI.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">03</span><div><h3 class="cs-card-title">User Journey</h3><p class="cs-card-def">Mapping des parcours pour construire une comp, consulter ses stats et partager ses analyses.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">04</span><div><h3 class="cs-card-title">Priorisation</h3><p class="cs-card-def">Sélection des features MVP en pondérant valeur perçue, complexité technique et différenciation.</p></div></div>
+    </div>
+    <div class="cs-verbatim">
+      <div class="cs-verbatim-h"><span>💬</span><span>Insight clé —</span></div>
+      <p class="cs-verbatim-q">Les outils existants affichent des données, mais ils ne guident pas la décision. Les joueurs veulent savoir quoi jouer, pas seulement voir leurs chiffres. L'outil de composition comble ce vide.</p>
+    </div>
+  </section>
+
+  <!-- DESIGN SYSTEM -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Un design system orienté data dense</h2>
+    <p class="cs-lede">L'univers gaming impose des contraintes spécifiques : interfaces sombres, information très dense, temps de scan court. Le design system a été pensé pour tenir ces contraintes tout en restant extensible.</p>
+    <div class="cs-da">
+      <div class="cs-da-card">
+        <span class="cs-da-num">01</span>
+        <h3 class="cs-da-key">Couleurs</h3>
+        <div class="cs-swatches">
+          <span class="cs-swatch" style="background:#0d0d14;color:#fff;">#0D0D14</span>
+          <span class="cs-swatch" style="background:#1a1a2e;color:#fff;">#1A1A2E</span>
+          <span class="cs-swatch" style="background:#7c3aed;color:#fff;">#7C3AED</span>
+          <span class="cs-swatch" style="background:#a78bfa;color:#111;">#A78BFA</span>
+        </div>
+        <p class="cs-da-txt">Fond sombre profond, accents violet — codes visuels du gaming compétitif.</p>
+      </div>
+      <div class="cs-da-card">
+        <span class="cs-da-num">02</span>
+        <h3 class="cs-da-key">Typographie</h3>
+        <p class="cs-da-txt">Inter pour les données, monospace pour les scores et statistiques numériques — lisibilité maximale à petite taille.</p>
+        <div class="cs-typo-sample display" style="font-family:'Inter',sans-serif;">ABCDEFGHIJKL</div>
+        <div class="cs-typo-sample body">01 02 03 04 05</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <section class="cs-sec cs-next-wrap cs-wrap">
+    <div class="cs-next">
+      <span class="cs-next-eye">Prochain projet</span>
+      <h2 class="cs-next-title">Plateforme freelance à Madagascar</h2>
+      <a class="cs-next-btn" href="case-study-freelance-madagascar.html">Jeter un œil
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </a>
+    </div>
+  </section>
+
+    <!-- CTA -->
+  <div class="cta-wrap cs-wrap" id="contact" data-screen-label="Me contacter">
+    <section class="cta reveal">
+      <p class="cta-kicker">Disponible pour de nouveaux projets</p>
+      <h2 class="cta-title">On se met au travail ?</h2>
+      <div class="cta-actions">
+        <a class="btn" href="mailto:hello@romainbarbier.fr">Envoyer un mail
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 2 L11 13 M22 2 L15 22 L11 13 L2 9 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+        </a>
+        <a class="btn" href="tel:+33645579648">06 45 57 96 48
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3 L9 3 L10.5 8 L8.5 9.5 C9.5 12 12 14.5 14.5 15.5 L16 13.5 L21 15 L21 17.5 C21 19 20 20.5 18 20.5 C10 20 4 14 3.5 6 C3.5 4 5 3 6.5 3 Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot cs-wrap">
+    <span class="foot-copy">© 2026 Romain Barbier — tous droits réservés.</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/romain-barbier-b6652b184/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="uploads/romainbarbier_cv.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </footer>
+
+</main>
+  <script src="contact.js"></script>
+</body>
+</html>

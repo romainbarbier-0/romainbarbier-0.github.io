@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Tower — Case study · Romain Barbier</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body class="case-study">
+
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV (same as homepage) -->
+<nav class="top">
+  <div class="inner">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="index.html#work" class="nav-link is-active">Projets</a>
+    <a href="index.html#apropos" class="nav-link">À propos</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<!-- BACK ROW -->
+<div class="cs-back-row wrap">
+  <a href="index.html#work" class="cs-back"><span class="arr">←</span> Tous les projets</a>
+  <span class="cs-counter">01 / 08 — Sélection 2026</span>
+</div>
+
+<!-- HERO -->
+<header class="cs-hero wrap">
+  <div class="cs-meta-strip">
+    <span>Client · ●●●●● (groupe automobile)</span>
+    <span class="dot">·</span>
+    <span>2023 — 2025</span>
+    <span class="dot">·</span>
+    <span>Senior UX/UI Designer</span>
+    <span class="dot">·</span>
+    <span>Industrie · Supply Chain</span>
+  </div>
+  <h1>Control <em>Tower</em></h1>
+  <p class="cs-tagline">Une plateforme de supervision de la supply chain mondiale, conçue pour des équipes opérationnelles qui doivent prendre des décisions <em>en quelques minutes</em>.</p>
+</header>
+
+<!-- COVER -->
+<div class="cs-cover-wrap">
+  <div class="cs-cover">
+    <div class="cs-cover-placeholder">
+      <div class="cs-cover-mock">
+        <div class="cs-mock-bar"><span></span><span></span><span></span><span class="title">Control Tower · Live</span></div>
+        <div class="cs-mock-body">
+          <div class="cs-mock-side"></div>
+          <div class="cs-mock-main">
+            <div class="cs-mock-row">
+              <div class="cs-mock-card"></div>
+              <div class="cs-mock-card"></div>
+              <div class="cs-mock-card"></div>
+              <div class="cs-mock-card"></div>
+            </div>
+            <div class="cs-mock-row big">
+              <div class="cs-mock-chart"></div>
+              <div class="cs-mock-list">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="cs-cover-tag">Visuels anonymisés · NDA</span>
+    </div>
+  </div>
+</div>
+
+<!-- LAYOUT : sticky TOC + body -->
+<div class="cs-layout wrap">
+
+  <!-- STICKY TOC -->
+  <aside class="cs-toc">
+    <span class="cs-toc-label">Sommaire</span>
+    <ol>
+      <li><a href="#overview" class="active">Contexte</a></li>
+      <li><a href="#challenge">Le problème</a></li>
+      <li><a href="#research">Recherche</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#exploration">Exploration</a></li>
+      <li><a href="#system">Design system</a></li>
+      <li><a href="#solution">Solution finale</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#reflection">Apprentissages</a></li>
+    </ol>
+  </aside>
+
+  <article class="cs-body">
+
+    <!-- 01 · CONTEXT -->
+    <section id="overview" class="cs-section">
+      <span class="cs-eye">01 · Contexte</span>
+      <h2>Le projet en <em>deux mots</em>.</h2>
+      <div class="cs-overview">
+        <div class="cs-info-card">
+          <div class="cs-info-row"><span class="k">Client</span><span class="v">●●●●● (anonymisé · NDA)</span></div>
+          <div class="cs-info-row"><span class="k">Secteur</span><span class="v">Automobile · Supply Chain</span></div>
+          <div class="cs-info-row"><span class="k">Mon rôle</span><span class="v">Senior UX/UI Designer</span></div>
+          <div class="cs-info-row"><span class="k">Équipe</span><span class="v">2 PM · 1 lead dev · 4 dev · 1 designer</span></div>
+          <div class="cs-info-row"><span class="k">Année</span><span class="v">2023 — 2025</span></div>
+          <div class="cs-info-row"><span class="k">Durée</span><span class="v">≈ 20 mois</span></div>
+          <div class="cs-info-row"><span class="k">Plateformes</span><span class="v">Web · Tablette · Mobile</span></div>
+          <div class="cs-info-row"><span class="k">Livrables</span><span class="v">Design system, prototypes, écrans, doc</span></div>
+        </div>
+        <div class="cs-paragraph">
+          <p>Le client est un acteur majeur de l'industrie automobile française qui pilote chaque jour des milliers de flux logistiques internationaux. L'enjeu : remplacer une mosaïque d'outils internes (tableurs, dashboards éparpillés, mails) par une seule plateforme de supervision en temps réel, capable de donner aux équipes opérationnelles la bonne information au bon moment.</p>
+          <p>Sur deux ans, j'ai accompagné le projet de la phase de recherche utilisateur jusqu'à la conception finale, en passant par la mise en place d'un design system, le prototypage et la collaboration quotidienne avec les équipes produit et dev.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · CHALLENGE -->
+    <section id="challenge" class="cs-section">
+      <span class="cs-eye">02 · Le problème</span>
+      <h2>Trop d'outils, <em>pas assez de clarté</em>.</h2>
+      <blockquote class="cs-pull">
+        « Quand un retard arrive, je passe trente minutes à recouper trois outils avant de pouvoir décider. <em>C'est trop tard.</em> »
+        <cite>— Verbatim · entretien utilisateur n°4</cite>
+      </blockquote>
+      <p class="cs-body-p">Les équipes opérationnelles devaient jongler entre <strong>cinq à sept interfaces</strong> pour suivre un même incident. La donnée existait, mais elle était fragmentée, mal hiérarchisée, et souvent en retard. Conséquence : des décisions prises à l'instinct plutôt qu'à la donnée, et une charge mentale énorme sur les superviseurs.</p>
+      <p class="cs-body-p">L'objectif que nous nous sommes fixé : <strong>réduire le temps de décision de 30 minutes à 5 minutes</strong> sur les incidents les plus fréquents, en consolidant l'information utile dans une seule vue contextuelle.</p>
+    </section>
+
+    <!-- 03 · RESEARCH -->
+    <section id="research" class="cs-section">
+      <span class="cs-eye">03 · Recherche</span>
+      <h2>Comprendre avant <em>de dessiner</em>.</h2>
+      <p class="cs-body-p cs-intro">Trois mois de recherche en amont, avec immersion dans les centres opérationnels, entretiens semi-directifs, observation passive et un audit du système existant.</p>
+      <div class="cs-stats">
+        <div class="cs-stat"><span class="num">18</span><p>entretiens utilisateurs</p></div>
+        <div class="cs-stat"><span class="num">04</span><p>centres visités</p></div>
+        <div class="cs-stat"><span class="num">06</span><p>personas identifiés</p></div>
+        <div class="cs-stat"><span class="num">12</span><p>user journeys cartographiés</p></div>
+      </div>
+      <h3 class="cs-h3">Trois insights structurants</h3>
+      <div class="cs-insights">
+        <div class="cs-insight">
+          <span class="cs-insight-num">01</span>
+          <h4>La donnée doit venir au superviseur, pas l'inverse</h4>
+          <p>Aujourd'hui, les superviseurs vont chercher l'info dans 5 outils. Demain, l'info doit être priorisée et poussée selon l'urgence.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight-num">02</span>
+          <h4>Le contexte est plus précieux que la donnée brute</h4>
+          <p>Un chiffre seul ne suffit pas. Il faut savoir d'où il vient, depuis quand, et ce qui en dépend. Le contexte est ce qui permet de décider.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight-num">03</span>
+          <h4>Les équipes pensent par incident, pas par flux</h4>
+          <p>L'outil doit être organisé autour des problèmes à résoudre (« retard ce matin sur le flux X ») plutôt que par hiérarchie technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE BLOCK : research -->
+    <div class="cs-image-block">
+      <div class="cs-image-placeholder">
+        <span class="ph-tag">Personas · User journeys · Workshops</span>
+      </div>
+      <p class="cs-caption">Synthèse des 6 personas et de leurs scenarios principaux, posée en atelier avec les équipes produit.</p>
+    </div>
+
+    <!-- 04 · PROCESS -->
+    <section id="process" class="cs-section">
+      <span class="cs-eye">04 · Process</span>
+      <h2>Une cadence <em>claire</em>, du brief à la livraison.</h2>
+      <div class="cs-process">
+        <div class="cs-step">
+          <span class="cs-step-n">[ 01 ]</span>
+          <h4>Discover</h4>
+          <p>Entretiens, immersion centres ops, audit de l'existant, alignement business.</p>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-n">[ 02 ]</span>
+          <h4>Define</h4>
+          <p>Personas, user journeys, hypothèses produit, priorisation avec la cheferie projet.</p>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-n">[ 03 ]</span>
+          <h4>Design</h4>
+          <p>Wireframes, maquettes hi-fi, design system, prototypes interactifs, tests utilisateurs.</p>
+        </div>
+        <div class="cs-step">
+          <span class="cs-step-n">[ 04 ]</span>
+          <h4>Deliver</h4>
+          <p>Handoff dev, support de prod, itérations sur retours terrain, doc du design system.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · EXPLORATION -->
+    <section id="exploration" class="cs-section">
+      <span class="cs-eye">05 · Exploration</span>
+      <h2>Trois directions, <em>une seule retenue</em>.</h2>
+      <p class="cs-body-p">Avant de figer une direction visuelle, j'ai exploré trois approches en parallèle pour la vue principale — un dashboard agrégé, un fil d'incidents priorisé, et une vue carte interactive. Les tests utilisateurs ont rapidement orienté l'équipe vers la deuxième.</p>
+      <div class="cs-grid-2">
+        <div class="cs-image-placeholder small">
+          <span class="ph-tag">Wireframes basse fi</span>
+        </div>
+        <div class="cs-image-placeholder small">
+          <span class="ph-tag">Concept dashboard</span>
+        </div>
+        <div class="cs-image-placeholder small">
+          <span class="ph-tag">Concept fil incidents</span>
+        </div>
+        <div class="cs-image-placeholder small">
+          <span class="ph-tag">Concept vue carte</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · DESIGN SYSTEM -->
+    <section id="system" class="cs-section">
+      <span class="cs-eye">06 · Design System</span>
+      <h2>Un système qui <em>tient dans le temps</em>.</h2>
+      <p class="cs-body-p">Le design system a été pensé pour scaler avec l'équipe et survivre aux refontes : tokens, composants documentés, déclinaisons web / tablette / mobile, et une bibliothèque Figma maintenue en continu.</p>
+
+      <div class="cs-system">
+        <div class="cs-system-block">
+          <span class="cs-system-label">Couleurs · Tokens primaires</span>
+          <div class="cs-swatches">
+            <div class="sw" style="--c:#0e1419"><span class="sw-name">Ink</span><span class="sw-hex">#0E1419</span></div>
+            <div class="sw" style="--c:#f4f5f0"><span class="sw-name">Paper</span><span class="sw-hex">#F4F5F0</span></div>
+            <div class="sw" style="--c:#ff5da8"><span class="sw-name">Accent</span><span class="sw-hex">#FF5DA8</span></div>
+            <div class="sw" style="--c:#1a5fce"><span class="sw-name">Info</span><span class="sw-hex">#1A5FCE</span></div>
+            <div class="sw" style="--c:#1f8a3a"><span class="sw-name">Success</span><span class="sw-hex">#1F8A3A</span></div>
+            <div class="sw" style="--c:#d4a017"><span class="sw-name">Warning</span><span class="sw-hex">#D4A017</span></div>
+            <div class="sw" style="--c:#c93b3b"><span class="sw-name">Critical</span><span class="sw-hex">#C93B3B</span></div>
+          </div>
+        </div>
+
+        <div class="cs-system-block">
+          <span class="cs-system-label">Typographie</span>
+          <div class="cs-typo">
+            <div class="cs-typo-spec">
+              <span class="aa" style="font-family:'Inter Tight';font-weight:600">Aa</span>
+              <div>
+                <strong>Inter Tight</strong>
+                <span>Display · Body · UI · 400-700</span>
+              </div>
+            </div>
+            <div class="cs-typo-spec">
+              <span class="aa" style="font-family:'Instrument Serif'">Aa</span>
+              <div>
+                <strong>Instrument Serif</strong>
+                <span>Display · Titres · Italiques</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-system-block">
+          <span class="cs-system-label">Composants · sélection</span>
+          <div class="cs-components">
+            <span class="cs-comp">Button</span>
+            <span class="cs-comp">Input</span>
+            <span class="cs-comp">Table</span>
+            <span class="cs-comp">Card</span>
+            <span class="cs-comp">Badge</span>
+            <span class="cs-comp">Modal</span>
+            <span class="cs-comp">Toast</span>
+            <span class="cs-comp">Tabs</span>
+            <span class="cs-comp">Toolbar</span>
+            <span class="cs-comp">Filters</span>
+            <span class="cs-comp">Chart</span>
+            <span class="cs-comp">Map</span>
+            <span class="cs-comp">+ 47 autres</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · SOLUTION -->
+    <section id="solution" class="cs-section">
+      <span class="cs-eye">07 · Solution finale</span>
+      <h2>Une seule vue, <em>une seule décision</em>.</h2>
+      <p class="cs-body-p">La plateforme finale est organisée autour d'un fil d'incidents priorisé, avec une vue détail contextuelle qui regroupe l'historique, les dépendances et les actions possibles. Trois écrans clés ci-dessous.</p>
+    </section>
+
+    <!-- BIG SCREEN BLOCKS -->
+    <div class="cs-screens">
+      <div class="cs-screen-block">
+        <div class="cs-image-placeholder lg">
+          <span class="ph-tag">Dashboard · Fil d'incidents</span>
+        </div>
+        <h3 class="cs-screen-title">Dashboard · le fil d'incidents</h3>
+        <p class="cs-screen-desc">Tous les incidents en cours, priorisés par criticité et impact business. Au clic, la vue détail s'ouvre sans changer de contexte.</p>
+      </div>
+      <div class="cs-screen-block">
+        <div class="cs-image-placeholder lg">
+          <span class="ph-tag">Vue détail · contextuelle</span>
+        </div>
+        <h3 class="cs-screen-title">Vue détail · le contexte avant la donnée</h3>
+        <p class="cs-screen-desc">Pour chaque incident : historique, dépendances, équipes concernées, et actions suggérées en fonction du pattern.</p>
+      </div>
+      <div class="cs-screen-block">
+        <div class="cs-image-placeholder lg">
+          <span class="ph-tag">Mobile · alertes terrain</span>
+        </div>
+        <h3 class="cs-screen-title">Mobile · alertes terrain</h3>
+        <p class="cs-screen-desc">Version mobile pour les superviseurs en déplacement : alertes ciblées, actions rapides, vue minimale.</p>
+      </div>
+    </div>
+
+    <!-- 08 · IMPACT -->
+    <section id="impact" class="cs-section">
+      <span class="cs-eye">08 · Impact</span>
+      <h2>Ce que <em>ça a changé</em>.</h2>
+      <div class="cs-metrics">
+        <div class="cs-metric">
+          <div class="cs-metric-num">−83 <span class="unit">%</span></div>
+          <h4>Temps de décision</h4>
+          <p>Sur les incidents les plus fréquents — passé de 30 min à 5 min en moyenne après six mois d'usage.</p>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">5 <span class="unit">→</span> 1</div>
+          <h4>Outils consultés</h4>
+          <p>Les superviseurs ont remplacé 5 à 7 outils internes par une seule plateforme contextuelle.</p>
+        </div>
+        <div class="cs-metric">
+          <div class="cs-metric-num">+47 <span class="unit">%</span></div>
+          <h4>Satisfaction utilisateur</h4>
+          <p>SUS passé de 52 à 76 sur les 12 premiers mois post-mise en production.</p>
+        </div>
+      </div>
+
+      <blockquote class="cs-pull">
+        « C'est la première fois que je peux décider sans avoir à ouvrir trois autres écrans. <em>Ça change la journée.</em> »
+        <cite>— Superviseur ops · feedback mois 6</cite>
+      </blockquote>
+    </section>
+
+    <!-- 09 · REFLECTION -->
+    <section id="reflection" class="cs-section">
+      <span class="cs-eye">09 · Apprentissages</span>
+      <h2>Ce que <em>j'en retiens</em>.</h2>
+      <div class="cs-learnings">
+        <div class="cs-learning">
+          <h4>Le design system est un produit, pas un livrable.</h4>
+          <p>Il s'entretient comme du code : versionning, gouvernance, doc à jour. Sans ça, il se dégrade en six mois.</p>
+        </div>
+        <div class="cs-learning">
+          <h4>Le terrain est plus précieux que les wireframes.</h4>
+          <p>Trois jours passés en centre ops m'ont appris plus que trois semaines d'analyse en remote. La présence physique compte.</p>
+        </div>
+        <div class="cs-learning">
+          <h4>La cheferie projet est un partenaire, pas un client.</h4>
+          <p>Les meilleures décisions sont sorties d'ateliers à six mains avec les PMs, pas de design en silo.</p>
+        </div>
+      </div>
+    </section>
+
+  </article>
+</div>
+
+<!-- NEXT PROJECT -->
+<section class="cs-next wrap">
+  <div class="cs-next-eye">
+    <span>02 / 08</span>
+    <span>Projet suivant</span>
+  </div>
+  <a href="case-study-gamingpals.html" class="cs-next-link">
+    <div>
+      <span class="cs-next-cat">Gaming · Outils joueurs</span>
+      <h2>GAMING<em>PALS</em></h2>
+      <p>Plateforme de stats et outil de composition d'équipes pour joueurs compétitifs.</p>
+    </div>
+    <span class="cs-next-arr">→</span>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-top">
+    <div>
+      <a href="index.html" class="brand">
+        <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.7 4.3L13 5.3 9.5 8.2 10.5 12.6 7 10.2 3.5 12.6 4.5 8.2 1 5.3 5.3 4.3z"/></svg>
+        Romain Barbier
+      </a>
+      <p>Designer UX/UI basé à Paris. Disponible pour mission en France et à l'international.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Sitemap</h4>
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#work">Projets</a>
+      <a href="index.html#skills">Compétences</a>
+      <a href="index.html#experience">Parcours</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h4>Ailleurs</h4>
+      <a href="https://www.linkedin.com/in/romain-barbier-b6652b184/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="#">Read.cv ↗</a>
+      <a href="#">Are.na ↗</a>
+      <a href="#">Behance ↗</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@romainbarbier.com">hello@romainbarbier.com</a>
+      <p>Paris · CET</p>
+      <p>Ouvert aux opportunités</p>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Romain Barbier · tous droits réservés</span>
+    <div class="links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Cookies</a>
+      <a href="#" style="color:var(--ink)">↑ Haut de page</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  let cx = 0, cy = 0, tx = 0, ty = 0;
+  document.addEventListener('mousemove', (e) => { tx = e.clientX; ty = e.clientY; });
+  function moveCursor(){
+    cx += (tx - cx) * 0.22;
+    cy += (ty - cy) * 0.22;
+    cursor.style.left = cx + 'px';
+    cursor.style.top = cy + 'px';
+    requestAnimationFrame(moveCursor);
+  }
+  moveCursor();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('big'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
+  });
+
+  // Sticky TOC active state
+  const tocLinks = document.querySelectorAll('.cs-toc a');
+  const sections = document.querySelectorAll('.cs-section');
+  function updateToc(){
+    let active = sections[0];
+    const top = window.scrollY + 140;
+    sections.forEach(s => { if (s.offsetTop <= top) active = s; });
+    tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + active.id));
+  }
+  window.addEventListener('scroll', updateToc, { passive:true });
+  updateToc();
+</script>
+
+</body>
+</html>

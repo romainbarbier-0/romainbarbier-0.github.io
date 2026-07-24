@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>(function(){var x=sessionStorage.getItem("pt-x"),y=sessionStorage.getItem("pt-y");document.documentElement.style.background="#0a0907";if(x!==null&&y!==null){var o=document.createElement("div");o.id="pt-pre";o.style.cssText="position:fixed;inset:0;z-index:999999;background:linear-gradient(135deg,#7C3AED 0%,#C026D3 45%,#FB3D5C 100%);";document.documentElement.appendChild(o);}})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace client Fontaines à eau — Case study · Romain Barbier</title>
+<meta name="description" content="Espace client sobre et fonctionnel sur Odoo pour une entreprise de fontaines à eau éco-conçues. Case study UX/UI de Romain Barbier.">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="case.css">
+<script src="fx.js" defer></script>
+<style>
+  /* Videos: no crop, always aligned to the top */
+  .cs-shot:has(video){aspect-ratio:auto !important;overflow:visible;}
+  .cs-shot video{height:auto !important;object-fit:contain;object-position:top;border-radius:12px;}
+  /* Hero title on a single line */
+  .cs-hero-title{max-width:none;white-space:nowrap;}
+</style>
+</head>
+<body class="cs">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="index.html#apropos" class="nav-link">À propos</a>
+    <a href="#contact" class="nav-link">Me contacter</a>
+  </div>
+</nav>
+
+<main data-screen-label="Case study · Back-office Odoo">
+
+  <!-- HERO -->
+  <section class="cs-hero cs-wrap">
+    <div class="cs-device">
+      <div class="cs-device-media"><img src="assets/cs/back-office/05c6697b0f33cced.jpg" alt="Espace client Fontaines à eau — dashboard principal"></div>
+      <div class="cs-device-meta"><span>E-commerce</span><span>2024</span></div>
+    </div>
+    <div class="cs-hero-head">
+      <span class="cs-eyebrow">Odoo V14 · B2B</span>
+      <h1 class="cs-hero-title">Espace client Fontaines à eau</h1>
+      <p class="cs-hero-sub">Concevoir un espace client sobre et fonctionnel sur Odoo pour une entreprise française de fontaines à eau éco-conçues — permettant aux clients de gérer commandes, interventions et équipements en un seul endroit.</p>
+      <div class="cs-chips">
+        <span class="cs-chip">UX/UI Design</span>
+        <span class="cs-chip">Back-office</span>
+        <span class="cs-chip">Odoo</span>
+        <span class="cs-chip">B2B</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LE PROJET -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Le projet</h2>
+    <div class="cs-project">
+      <div class="cs-fields">
+        <div>
+          <span class="cs-field-key">Contexte</span>
+          <p class="cs-field-val">Une entreprise française spécialisée dans les fontaines à eau microfiltrées éco-conçues propose à ses clients professionnels (hôtels, restaurants, entreprises) un abonnement tout-inclus : location de fontaine, maintenance, livraison de bouteilles en verre et interventions techniques sur site. Pour centraliser la gestion de cette relation client post-vente, il fallait concevoir un espace client intégré directement dans leur ERP Odoo.</p>
+        </div>
+        <div>
+          <span class="cs-field-key">Rester dans les contraintes Odoo</span>
+          <p class="cs-field-val">→ Interface sobre et native, sans développements lourds hors du framework</p>
+        </div>
+        <div>
+          <span class="cs-field-key">Simplifier le suivi des équipements</span>
+          <p class="cs-field-val">→ Le client visualise ses fontaines, leur état et les prochaines interventions</p>
+        </div>
+      </div>
+      <div class="cs-meta">
+        <div class="cs-meta-row"><span class="cs-meta-key">Secteur</span><span class="cs-meta-val">Eau · Économie circulaire · B2B</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Mon rôle</span><span class="cs-meta-val">UX/UI Designer — Architecture, wireframes, UI des vues Odoo</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Type de projet</span><span class="cs-meta-val">2024 · Odoo v12/v14 — composants natifs uniquement</span></div>
+        <div class="cs-meta-row"><span class="cs-meta-key">Stack Design</span><span class="cs-meta-val">Builder Odoo, Figma</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <div class="cs-band cs-bleed"><img src="assets/cs/back-office/6c78aad3f2a5bc05.jpg" alt="Aperçu de l'espace client Fontaines à eau"></div>
+
+  <!-- CADRE CONTRAINT -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Designer dans un cadre contraint —<br>Odoo v12/v14</h2>
+    <p class="cs-lede">Odoo impose un framework visuel strict : composants natifs, grille définie, peu de latitude sur les styles. Le défi n'était pas de créer une interface spectaculaire, mais de concevoir une architecture d'information claire et des parcours fluides dans les limites du système.</p>
+    <div class="cs-cards" style="grid-template-columns:1fr;">
+      <div class="cs-card">
+        <span class="cs-card-num">01</span>
+        <div>
+          <h3 class="cs-card-title">Ce que ça implique concrètement</h3>
+          <p class="cs-card-def">Pas de composants custom, pas de CSS arbitraire — le travail de design se concentre sur la structure des vues, la hiérarchie des informations, le choix des widgets natifs et la logique de navigation entre les modules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG SHOT -->
+  <section class="cs-wrap">
+    <div class="cs-shot big"><video src="assets/cs/back-office/pres.mp4" autoplay loop muted playsinline></video></div>
+    <p class="cs-cap">Le Back-office Odoo — En V12/V14, la conception d'un back-office sur Odoo est sobre et structurée. Des rubriques, des lignes, quelques fonctionnalités — tout en intégrant les fonctionnalités les plus cruciales pour l'utilisateur : historique d'interventions, factures, historique de commandes.</p>
+  </section>
+
+  <!-- SIX MODULES -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Six modules, un accès immédiat à l'essentiel</h2>
+    <p class="cs-lede">L'espace client a été structuré autour de six modules correspondant aux besoins réels des clients en abonnement — de la boutique de consommables au suivi des interventions techniques sur leurs fontaines.</p>
+    <div class="cs-cards">
+      <div class="cs-card"><span class="cs-card-num">01</span><div><h3 class="cs-card-title">Mes commandes</h3><p class="cs-card-def">Suivi des commandes en cours avec statut (en attente, en préparation, en livraison, livrée) et accès aux factures associées.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">02</span><div><h3 class="cs-card-title">Mes interventions</h3><p class="cs-card-def">Historique et suivi des interventions techniques — planifiées, en cours ou terminées — avec rapport téléchargeable et contact technicien.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">03</span><div><h3 class="cs-card-title">Factures &amp; documents</h3><p class="cs-card-def">Accès centralisé aux factures, contrats et documents administratifs liés à l'abonnement.</p></div></div>
+      <div class="cs-card"><span class="cs-card-num">04</span><div><h3 class="cs-card-title">Contact &amp; assistance</h3><p class="cs-card-def">Formulaire de contact contextuel avec choix du sujet — disponible depuis chaque module pour une demande rapide.</p></div></div>
+    </div>
+    <div class="cs-duo" style="margin-top:32px;">
+      <div>
+        <div class="cs-shot" style="aspect-ratio:1434 / 1246;"><img src="assets/cs/back-office/Commandes.jpg" alt="Vue liste des commandes" style="object-position:top;"></div>
+      </div>
+      <div>
+        <div class="cs-shot"><video src="assets/cs/back-office/fontaines.mp4" autoplay loop muted playsinline></video></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOUTIQUE B2B -->
+  <section class="cs-sec cs-wrap">
+    <h2 class="cs-h">Une boutique B2B pensée pour la commande récurrente</h2>
+    <p class="cs-lede">Les clients commandent régulièrement les mêmes consommables — bouteilles 33cl, 55cl ou 77cl, bouchons, bonbonnes de CO2. Le catalogue devait être navigable rapidement avec un système de catégories clair et une fiche produit sobre mettant en avant la quantité minimum de commande.</p>
+    <div class="cs-duo">
+      <div>
+        <div class="cs-shot"><video src="assets/cs/back-office/page.mp4" autoplay loop muted playsinline></video></div>
+      </div>
+      <div>
+        <div class="cs-shot"><video src="assets/cs/back-office/tri.mp4" autoplay loop muted playsinline></video></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <section class="cs-sec cs-next-wrap cs-wrap">
+    <div class="cs-next">
+      <span class="cs-next-eye">Prochain projet</span>
+      <h2 class="cs-next-title">Site E-commerce santé enfant Odoo</h2>
+      <a class="cs-next-btn" href="case-study-pharma.html">Jeter un œil
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </a>
+    </div>
+  </section>
+
+    <!-- CTA -->
+  <div class="cta-wrap cs-wrap" id="contact" data-screen-label="Me contacter">
+    <section class="cta reveal">
+      <p class="cta-kicker">Disponible pour de nouveaux projets</p>
+      <h2 class="cta-title">On se met au travail ?</h2>
+      <div class="cta-actions">
+        <a class="btn" href="mailto:hello@romainbarbier.fr">Envoyer un mail
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 2 L11 13 M22 2 L15 22 L11 13 L2 9 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+        </a>
+        <a class="btn" href="tel:+33645579648">06 45 57 96 48
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3 L9 3 L10.5 8 L8.5 9.5 C9.5 12 12 14.5 14.5 15.5 L16 13.5 L21 15 L21 17.5 C21 19 20 20.5 18 20.5 C10 20 4 14 3.5 6 C3.5 4 5 3 6.5 3 Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot cs-wrap">
+    <span class="foot-copy">© 2026 Romain Barbier — tous droits réservés.</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/romain-barbier-b6652b184/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="uploads/romainbarbier_cv.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </footer>
+
+</main>
+  <script src="contact.js"></script>
+</body>
+</html>

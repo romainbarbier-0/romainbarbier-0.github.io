@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden;width:100%}
 body{
   font-family:'Inter Tight','SF Pro Display',-apple-system,sans-serif;
   font-weight:400;color:#f1ede4;background:#0a0907;

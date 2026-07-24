@@ -496,6 +496,7 @@
   scroll-snap-type:x mandatory;
   padding-bottom:10px;
   -webkit-overflow-scrolling:touch;
+  touch-action:pan-x;
 }
 .cs-strip img{
   flex:0 0 auto;
